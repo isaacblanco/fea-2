@@ -1,12 +1,6 @@
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC2-212a216.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC2-evaluables.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC2-no-evaluables.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC2-parte1.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC3_20230430_evaluables.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC3-extras.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC3-ideas.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC3-Ini.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/pec4-eco.mkv
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC4-evaluando.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC5_2023_06_02_evaluables.mp4
-Https://isaacblanco.com/UOC/PROARTES/23s1/PEC5-ejercicios.mkv
+# PEC 2 - FEA (Front End Avanzado)
+
+Repositorio en GitHub
+
+https://github.com/isaacblanco/fea-2
+

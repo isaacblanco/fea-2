@@ -1,13 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { HeaderMenus } from 'src/app/Models/header-menus.dto';
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import { Store } from "@ngrx/store";
+import { Observable } from "rxjs";
+import { HeaderMenus } from "src/app/Models/header-menus.dto";
+
 import { HeaderMenusService } from 'src/app/Services/header-menus.service';
 import { LocalStorageService } from 'src/app/Services/local-storage.service';
 
+interface AppState {
+  auth: {
+    isLoggedIn: boolean;
+    showAuthSection: boolean;
+    showNoAuthSection: boolean;
+  };
+}
+
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  selector: "app-header",
+  templateUrl: "./header.component.html",
+  styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
   showAuthSection: boolean;
@@ -34,36 +45,36 @@ export class HeaderComponent implements OnInit {
   }
 
   dashboard(): void {
-    this.router.navigateByUrl('dashboard');
+    this.router.navigateByUrl("dashboard");
   }
 
   home(): void {
-    this.router.navigateByUrl('home');
+    this.router.navigateByUrl("home");
   }
 
   login(): void {
-    this.router.navigateByUrl('login');
+    this.router.navigateByUrl("login");
   }
 
   register(): void {
-    this.router.navigateByUrl('register');
+    this.router.navigateByUrl("register");
   }
 
   adminPosts(): void {
-    this.router.navigateByUrl('posts');
+    this.router.navigateByUrl("posts");
   }
 
   adminCategories(): void {
-    this.router.navigateByUrl('categories');
+    this.router.navigateByUrl("categories");
   }
 
   profile(): void {
-    this.router.navigateByUrl('profile');
+    this.router.navigateByUrl("profile");
   }
 
   logout(): void {
-    this.localStorageService.remove('user_id');
-    this.localStorageService.remove('access_token');
+    this.localStorageService.remove("user_id");
+    this.localStorageService.remove("access_token");
 
     const headerInfo: HeaderMenus = {
       showAuthSection: false,
@@ -72,6 +83,6 @@ export class HeaderComponent implements OnInit {
 
     this.headerMenusService.headerManagement.next(headerInfo);
 
-    this.router.navigateByUrl('home');
+    this.router.navigateByUrl("home");
   }
 }
